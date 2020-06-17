@@ -7,4 +7,4 @@ ___
 * [Swift](#swift)
 
 ### Swift
-- [businessCardSeonguk](businessCardSeonguk/README.md)
+- [businessCardSeonguk](businessCardSeonguk)
