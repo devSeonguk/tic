@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6531E12249B89A600D0AC6F /* InfoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6531E11249B89A600D0AC6F /* InfoButton.swift */; };
 		E6C28D26249A45FB00EFA04B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C28D25249A45FB00EFA04B /* AppDelegate.swift */; };
 		E6C28D28249A45FB00EFA04B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C28D27249A45FB00EFA04B /* SceneDelegate.swift */; };
 		E6C28D2A249A45FB00EFA04B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C28D29249A45FB00EFA04B /* ContentView.swift */; };
@@ -15,10 +16,10 @@
 		E6C28D32249A45FD00EFA04B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C28D30249A45FD00EFA04B /* LaunchScreen.storyboard */; };
 		E6C28D46249A7EC100EFA04B /* Sniglet-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6C28D45249A7EC100EFA04B /* Sniglet-Regular.ttf */; };
 		E6C28D48249A7F2100EFA04B /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6C28D47249A7F2100EFA04B /* Cabin-Regular.ttf */; };
-		E6C28D4A249A805A00EFA04B /* Sniglet-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6C28D49249A805A00EFA04B /* Sniglet-ExtraBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E6531E11249B89A600D0AC6F /* InfoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoButton.swift; sourceTree = "<group>"; };
 		E6C28D22249A45FB00EFA04B /* businessCardSeonguk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = businessCardSeonguk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C28D25249A45FB00EFA04B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6C28D27249A45FB00EFA04B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		E6C28D33249A45FD00EFA04B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C28D45249A7EC100EFA04B /* Sniglet-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sniglet-Regular.ttf"; sourceTree = "<group>"; };
 		E6C28D47249A7F2100EFA04B /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.ttf"; sourceTree = "<group>"; };
-		E6C28D49249A805A00EFA04B /* Sniglet-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sniglet-ExtraBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +69,7 @@
 				E6C28D2B249A45FD00EFA04B /* Assets.xcassets */,
 				E6C28D30249A45FD00EFA04B /* LaunchScreen.storyboard */,
 				E6C28D33249A45FD00EFA04B /* Info.plist */,
+				E6531E11249B89A600D0AC6F /* InfoButton.swift */,
 				E6C28D2D249A45FD00EFA04B /* Preview Content */,
 			);
 			path = businessCardSeonguk;
@@ -86,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				E6C28D45249A7EC100EFA04B /* Sniglet-Regular.ttf */,
-				E6C28D49249A805A00EFA04B /* Sniglet-ExtraBold.ttf */,
 				E6C28D47249A7F2100EFA04B /* Cabin-Regular.ttf */,
 			);
 			path = Resources;
@@ -151,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C28D48249A7F2100EFA04B /* Cabin-Regular.ttf in Resources */,
-				E6C28D4A249A805A00EFA04B /* Sniglet-ExtraBold.ttf in Resources */,
 				E6C28D46249A7EC100EFA04B /* Sniglet-Regular.ttf in Resources */,
 				E6C28D32249A45FD00EFA04B /* LaunchScreen.storyboard in Resources */,
 				E6C28D2F249A45FD00EFA04B /* Preview Assets.xcassets in Resources */,
@@ -169,6 +168,7 @@
 				E6C28D26249A45FB00EFA04B /* AppDelegate.swift in Sources */,
 				E6C28D28249A45FB00EFA04B /* SceneDelegate.swift in Sources */,
 				E6C28D2A249A45FB00EFA04B /* ContentView.swift in Sources */,
+				E6531E12249B89A600D0AC6F /* InfoButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,7 +5,6 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Sniglet-Regular.ttf</string>
-		<string>Sniglet-ExtraBold.ttf</string>
 		<string>Cabin-Regular.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>

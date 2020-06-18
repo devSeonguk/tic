@@ -31,15 +31,15 @@ struct ContentView: View {
                 Button(action: {
                     //To call with guard statement
                     let phoneNumber = "tel://+441111111111"
-                    guard let url = URL(string: phoneNumber) else { return }
-                    UIApplication.shared.open(url)}) {
+                    guard let call = URL(string: phoneNumber) else { return }
+                    UIApplication.shared.open(call)}) {
                         InfoButton(text: "+44 1111 111111", imageName: "phone.fill")
                 }
                 
                 Button(action: {
                     //To send Email
-                    if let url = URL(string: "mailto:anonymous@anonymous.com") {
-                        UIApplication.shared.open(url)
+                    if let email = URL(string: "mailto:anonymous@anonymous.com") {
+                        UIApplication.shared.open(email)
                     } else {
                         print("error")
                     }
@@ -50,8 +50,8 @@ struct ContentView: View {
                 
                 Button(action: {
                     //To open Github page
-                    if let url = URL(string: "https://github.com/devSeonguk") {
-                        UIApplication.shared.open(url)
+                    if let github = URL(string: "https://github.com/devSeonguk") {
+                        UIApplication.shared.open(github)
                     } else {
                         print("error")
                     }
@@ -72,22 +72,5 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct InfoButton: View {
-    
-    let text: String
-    let imageName: String
-    
-    var body: some View {
-        RoundedRectangle(cornerRadius: 25)
-            .fill(Color.white)
-            .frame(height: 40)
-            .padding(.horizontal)
-            .overlay(
-                HStack {
-                    Image(systemName: imageName)
-                        .foregroundColor(Color(red: 0.12, green: 0.12, blue: 0.12))
-                    Text(text)
-                        .foregroundColor(.black)
-            })
-    }
-}
+
+
