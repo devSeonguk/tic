@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BlackHanSans-Regular.ttf">
+            <string>BlackHanSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ロト待って下さい" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Billionaire!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFK-lb-7NF">
+                                <rect key="frame" x="58.5" y="77" width="258" height="27"/>
+                                <fontDescription key="fontDescription" name="BlackHanSans-Regular" family="Black Han Sans" pointSize="27"/>
+                                <color key="textColor" red="0.30980392156862746" green="0.54117647058823526" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QL5-gg-3Jo" userLabel="First Ball">
+                                <rect key="frame" x="25.5" y="163.5" width="90" height="88"/>
+                                <color key="tintColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="77"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1Pb-VT-VbU" userLabel="Fourth Ball">
+                                <rect key="frame" x="25.5" y="277.5" width="90" height="88"/>
+                                <color key="tintColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="77"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJN-uC-Iug">
+                                <rect key="frame" x="104.5" y="424" width="166" height="166"/>
+                                <state key="normal" image="LuckyClover">
+                                    <color key="titleColor" red="0.30980392159999998" green="0.54117647059999996" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getNumberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ML-7j-nWY"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="P91-oz-1Ll" userLabel="Third Ball">
+                                <rect key="frame" x="259.5" y="163.5" width="90" height="88"/>
+                                <color key="tintColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="77"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qlB-2X-S37" userLabel="Sixth Ball">
+                                <rect key="frame" x="259.5" y="277.5" width="90" height="88"/>
+                                <color key="tintColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="77"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lWP-VW-Zgq" userLabel="Fifth Ball">
+                                <rect key="frame" x="142.5" y="277.5" width="90" height="88"/>
+                                <color key="tintColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="77"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4MR-AF-Vc3" userLabel="Second Ball">
+                                <rect key="frame" x="142.5" y="163.5" width="90" height="88"/>
+                                <color key="tintColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="77"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.027450980392156862" green="0.011764705882352941" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YJN-uC-Iug" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3fA-nl-bj3"/>
+                            <constraint firstItem="lWP-VW-Zgq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8is-hh-kLh"/>
+                            <constraint firstItem="P91-oz-1Ll" firstAttribute="top" secondItem="mFK-lb-7NF" secondAttribute="bottom" constant="57" id="BSr-MS-nNc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YJN-uC-Iug" secondAttribute="bottom" constant="77" id="F3m-aw-Ic5"/>
+                            <constraint firstItem="lWP-VW-Zgq" firstAttribute="leading" secondItem="1Pb-VT-VbU" secondAttribute="trailing" constant="27" id="HBb-Jt-ahj"/>
+                            <constraint firstItem="4MR-AF-Vc3" firstAttribute="top" secondItem="mFK-lb-7NF" secondAttribute="bottom" constant="57" id="IA5-wR-dCw"/>
+                            <constraint firstItem="P91-oz-1Ll" firstAttribute="leading" secondItem="4MR-AF-Vc3" secondAttribute="trailing" constant="27" id="KSC-mr-FuB"/>
+                            <constraint firstItem="qlB-2X-S37" firstAttribute="leading" secondItem="lWP-VW-Zgq" secondAttribute="trailing" constant="27" id="OOZ-eh-d2u"/>
+                            <constraint firstItem="4MR-AF-Vc3" firstAttribute="leading" secondItem="QL5-gg-3Jo" secondAttribute="trailing" constant="27" id="Sat-li-vjY"/>
+                            <constraint firstItem="4MR-AF-Vc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U7c-ca-0LT"/>
+                            <constraint firstItem="YJN-uC-Iug" firstAttribute="top" secondItem="1Pb-VT-VbU" secondAttribute="bottom" constant="57" id="Xg9-Si-lxF"/>
+                            <constraint firstItem="mFK-lb-7NF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="cre-Nd-2XS"/>
+                            <constraint firstItem="YJN-uC-Iug" firstAttribute="top" secondItem="qlB-2X-S37" secondAttribute="bottom" constant="57" id="dGv-T8-C9x"/>
+                            <constraint firstItem="QL5-gg-3Jo" firstAttribute="top" secondItem="mFK-lb-7NF" secondAttribute="bottom" constant="57" id="qGL-79-5ox"/>
+                            <constraint firstItem="mFK-lb-7NF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rHh-6Q-hk7"/>
+                            <constraint firstItem="lWP-VW-Zgq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y8o-MV-TT0"/>
+                            <constraint firstItem="YJN-uC-Iug" firstAttribute="top" secondItem="lWP-VW-Zgq" secondAttribute="bottom" constant="57" id="ycp-Ec-lQp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fifthNumber" destination="lWP-VW-Zgq" id="jIv-Nq-ORn"/>
+                        <outlet property="firstNumber" destination="QL5-gg-3Jo" id="TEt-7i-paG"/>
+                        <outlet property="fourthNumber" destination="1Pb-VT-VbU" id="87h-bD-Nkj"/>
+                        <outlet property="secondNumber" destination="4MR-AF-Vc3" id="Q4d-rj-g4h"/>
+                        <outlet property="sixthNumber" destination="qlB-2X-S37" id="xl4-PM-R8n"/>
+                        <outlet property="thirdNumber" destination="P91-oz-1Ll" id="aIY-om-oNF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-415.94202898550731" y="145.98214285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="7.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="LuckyClover" width="166.5" height="166.5"/>
+    </resources>
+</document>
