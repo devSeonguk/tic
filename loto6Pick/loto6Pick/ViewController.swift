@@ -26,13 +26,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        firstNumber.image = UIImage(systemName: "7.circle.fill")
-        secondNumber.image = UIImage(systemName: "7.circle.fill")
-        thirdNumber.image = UIImage(systemName: "7.circle.fill")
-        fourthNumber.image = UIImage(systemName: "7.circle.fill")
-        fifthNumber.image = UIImage(systemName: "7.circle.fill")
-        sixthNumber.image = UIImage(systemName: "7.circle.fill")
-        
+            reset()
     }
 
     @IBAction func getNumberPressed(_ sender: UIButton) {
@@ -49,56 +43,32 @@ class ViewController: UIViewController {
                 firstNumber.image = UIImage(systemName: "\(lottoPickedNumbers[0]).circle.fill")
                 UIView.animate(withDuration: 0.5, animations:{
                     self.firstNumber.frame.origin.y -= 10
-                })/*{_ in
-                    UIView.animateKeyframes(withDuration: 0.5, delay: 0.25, options: [.autoreverse], animations: {
-                        self.firstNumber.frame.origin.y -= 10
-                    })
-                }*/
+                })
             case 1:
                 secondNumber.image = UIImage(systemName: "\(lottoPickedNumbers[1]).circle.fill")
                 UIView.animate(withDuration: 0.5, animations:{
                     self.secondNumber.frame.origin.y -= 10
-                })/*{_ in
-                    UIView.animateKeyframes(withDuration: 0.5, delay: 0.25, options: [.autoreverse], animations: {
-                        self.secondNumber.frame.origin.y -= 10
-                    })
-                }*/
+                })
             case 2:
                 thirdNumber.image = UIImage(systemName: "\(lottoPickedNumbers[2]).circle.fill")
                 UIView.animate(withDuration: 0.5, animations:{
                     self.thirdNumber.frame.origin.y -= 10
-                })/*{_ in
-                    UIView.animateKeyframes(withDuration: 0.5, delay: 0.25, options: [.autoreverse], animations: {
-                        self.thirdNumber.frame.origin.y -= 10
-                    })
-                }*/
+                })
             case 3:
                 fourthNumber.image = UIImage(systemName: "\(lottoPickedNumbers[3]).circle.fill")
                 UIView.animate(withDuration: 0.5, animations:{
                     self.fourthNumber.frame.origin.y -= 10
-                })/*{_ in
-                    UIView.animateKeyframes(withDuration: 0.5, delay: 0.25, options: [.autoreverse], animations: {
-                        self.fourthNumber.frame.origin.y -= 10
-                    })
-                }*/
+                })
             case 4:
                 fifthNumber.image = UIImage(systemName: "\(lottoPickedNumbers[4]).circle.fill")
                 UIView.animate(withDuration: 0.5, animations:{
                     self.fifthNumber.frame.origin.y -= 10
-                })/*{_ in
-                    UIView.animateKeyframes(withDuration: 0.5, delay: 0.25, options: [.autoreverse], animations: {
-                        self.fifthNumber.frame.origin.y -= 10
-                    })
-                }*/
+                })
             case 5:
                 sixthNumber.image = UIImage(systemName: "\(lottoPickedNumbers[5]).circle.fill")
                 UIView.animate(withDuration: 0.5, animations:{
                     self.sixthNumber.frame.origin.y -= 10
-                })/*{_ in
-                    UIView.animateKeyframes(withDuration: 0.5, delay: 0.25, options: [.autoreverse], animations: {
-                        self.sixthNumber.frame.origin.y -= 10
-                    })
-                }*/
+                })
             default:
                 print("Restart for Billion Dollars!")
                 let alert = UIAlertController(title: "Lucky 6 Numbers!", message: "\(lottoPickedNumbers.dropLast())", preferredStyle: UIAlertController.Style.alert)
@@ -115,6 +85,7 @@ class ViewController: UIViewController {
         
         if lottoBallCount - 1 == 6 {
             reset()
+            finalAudioPlay()
             lottoPickedNumbers.removeAll()
             
         }
@@ -136,17 +107,19 @@ class ViewController: UIViewController {
         sixthNumber.frame.origin.y += 10
         
         print("Reset")
-        
-        let url = Bundle.main.url(forResource: "lucky6", withExtension: "wav")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player.play()
-        
+       
         firstNumber.image = UIImage(systemName: "7.circle.fill")
         secondNumber.image = UIImage(systemName: "7.circle.fill")
         thirdNumber.image = UIImage(systemName: "7.circle.fill")
         fourthNumber.image = UIImage(systemName: "7.circle.fill")
         fifthNumber.image = UIImage(systemName: "7.circle.fill")
         sixthNumber.image = UIImage(systemName: "7.circle.fill")
+    }
+    
+    func finalAudioPlay() {
+        let url = Bundle.main.url(forResource: "lucky6", withExtension: "wav")
+            player = try! AVAudioPlayer(contentsOf: url!)
+            player.play()
     }
 }
 
