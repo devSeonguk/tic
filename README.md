@@ -9,3 +9,5 @@ ___
 ### Swift
 - [businessCardSeonguk](businessCardSeonguk)
 - [loto6Pick](loto6Pick)
+- [EnchantPole](EnchantPole)
+- [BVisualNovel](BVisualNovel)
